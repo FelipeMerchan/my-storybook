@@ -45,3 +45,10 @@ Tertiary.args = {
     size: 'normal',
     color: 'tertiary',
 }
+
+export const CustomBackgroundColor = Template.bind({});
+CustomBackgroundColor.args = {
+    size: 'normal',
+    color: 'tertiary',
+    backgroundColor: 'black',
+}
