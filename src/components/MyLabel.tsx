@@ -9,13 +9,25 @@ export interface MyLabelProps {
     * Tamaño por defecto del label.
     */
     size: 'normal'|'h1'|'h2'|'h3';
+    /**
+    * Version del boton.
+    */
+    color: 'primary'|'secondary'|'tertiary';
+    /**
+    * Define si el boton debe capitalizar sus caracteres.
+    */
+    allCaps?: boolean;
 }
 
 export const MyLabel = ({
-    label = 'No Label',
-    size = 'normal'
+    allCaps = false,
+    color   = 'primary',
+    label   = 'No Label',
+    size    = 'normal',
 }: MyLabelProps) => {
   return (
-    <span className={`${size}`}>{label}</span>
+    <span className={`${size} text-${color}`}>
+        {allCaps ? label.toUpperCase() : label}
+    </span>
   )
 }
