@@ -26,7 +26,7 @@ export const MyLabel = ({
     size    = 'normal',
 }: MyLabelProps) => {
   return (
-    <span className={`${size} text-${color}`}>
+    <span className={`label ${size} text-${color}`}>
         {allCaps ? label.toUpperCase() : label}
     </span>
   )
