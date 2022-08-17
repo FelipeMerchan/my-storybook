@@ -1,7 +1,13 @@
 import './mylabel.css';
 
 export interface MyLabelProps {
+    /**
+    * Texto que se va a mostrar en la etiqueta.
+    */
     label: string;
+    /**
+    * Tamaño por defecto del label.
+    */
     size: 'normal'|'h1'|'h2'|'h3';
 }
 
