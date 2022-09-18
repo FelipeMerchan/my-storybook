@@ -1,6 +1,6 @@
 import './mylabel.css';
 
-interface CustomFontColorProps {
+export interface CustomFontColorProps {
     /**
     * Color personalizado de la fuente.
     */
