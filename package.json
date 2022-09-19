@@ -10,6 +10,9 @@
     "url": "https://github.com/FelipeMerchan/my-storybook",
     "type": "git"
   },
+  "peerDependencies": {
+    "react": ">=16"
+  },
   "release": {
     "branches": [
       "main"
