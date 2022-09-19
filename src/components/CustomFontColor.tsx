@@ -21,3 +21,5 @@ export const CustomFontColor = ({ fontColor, size }: CustomFontColorProps) => {
     </span>
   )
 }
+
+export default CustomFontColor;
